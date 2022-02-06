@@ -54,7 +54,7 @@ def create_anime():
         return jsonify({
             "avaliable_keys": anime_keys,
             "worng_keys_sended": wrong_keys
-        })
+        }), 422
 
 def delete_anime(id: int):
     id = int(id)
